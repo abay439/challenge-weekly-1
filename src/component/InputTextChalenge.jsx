@@ -26,8 +26,7 @@ function InputText() {
   */
   return (
     <div>
-      {inputValue}
-      <br />
+      <h1>{inputValue}</h1>
       <input
         type="text"
         onChange={handleInputTextChange}
