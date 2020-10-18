@@ -2,12 +2,12 @@ import React, { Fragment } from 'react'
 import MouseEnterLeaveChalenge from './MouseEnterLeaveChalenge'
 import InputTextChalenge from './InputTextChalenge'
 import InputPasswordChalenge from './InputPasswordChalenge'
-import ComponentBackgroundColor from './ComponentBackgroundColor'
+// import ComponentBackgroundColor from './ComponentBackgroundColor'
 
 function App() {
   return (
     <Fragment>
-      <ComponentBackgroundColor />
+      {/* <ComponentBackgroundColor /> */}
       <MouseEnterLeaveChalenge />
       <InputTextChalenge />
       <InputPasswordChalenge />

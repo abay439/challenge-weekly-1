@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 /*
   ubah component dibawah sesuai spesifikasi berikut:
@@ -12,19 +12,30 @@ import React from 'react'
 */
 
 function MouseEventDemo() {
-  function handleOnMouseEnter() {
-    console.log('mouse enter event')
-  }
-
-  function handleOnMouseLeave() {
-    console.log('mouse leave event')
-  }
-
+  const [color, setColor] = useState('yellow')
   const styling = {
-    backgroundColor: 'yellow',
+    backgroundColor: color,
     width: 100,
     height: 100,
   }
+
+  function handleOnMouseEnter(e) {
+    console.log(e.target)
+    const newColor = color === 'yellow' ? 'green' : 'yellow'
+    setColor(newColor)
+  }
+
+  function handleOnMouseLeave(e) {
+    console.log(e.target)
+    const newColor = color === 'yellow' ? 'green' : 'yellow'
+    setColor(newColor)
+  }
+
+  // const styling = {
+  //   backgroundColor: 'yellow',
+  //   width: 100,
+  //   height: 100,
+  // }
   return (
     <div
       style={styling}

@@ -14,6 +14,7 @@ function InputText() {
     perhatikan bahwa tidak semua event memiliki
     target.value
   */
+
   function handleInputTextChange(e) {
     console.log(e.target.value)
   }
@@ -24,7 +25,7 @@ function InputText() {
   */
   return (
     <div>
-      [GANTI SAYA]
+      <h1>{}</h1>
       <input
         type="text"
         onChange={handleInputTextChange}
